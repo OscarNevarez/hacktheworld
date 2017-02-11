@@ -1,0 +1,24 @@
+{
+  "name": "hacktheworld",
+  "version": "0.0.1",
+  "description": "Our hackpoly 2017 project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OscarNevarez/hacktheworld.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OscarNevarez/hacktheworld/issues"
+  },
+  "homepage": "https://github.com/OscarNevarez/hacktheworld#readme",
+  "dependencies": {
+    "dropzone": "^4.3.0",
+    "express": "^4.14.1"
+  }
+}
