@@ -1,24 +1,25 @@
 {
-  "name": "hacktheworld",
+  "name": "nodejs-docs-samples-vision",
   "version": "0.0.1",
-  "description": "Our hackpoly 2017 project",
-  "main": "server.js",
+  "private": true,
+  "license": "Apache Version 2.0",
+  "author": "Google Inc.",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "test": "cd ..; npm run st -- --verbose vision/system-test/*.test.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/OscarNevarez/hacktheworld.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/OscarNevarez/hacktheworld/issues"
-  },
-  "homepage": "https://github.com/OscarNevarez/hacktheworld#readme",
   "dependencies": {
+    "@google-cloud/storage": "0.7.0",
+    "@google-cloud/vision": "0.8.0",
+    "async": "2.1.4",
     "express": "^4.14.1",
-    "express-fileupload": "0.0.7"
+    "natural": "0.4.0",
+    "redis": "2.6.5",
+    "yargs": "6.6.0"
+  },
+  "optionalDependencies": {
+    "canvas": "1.6.2"
+  },
+  "engines": {
+    "node": ">=4.3.2"
   }
 }
