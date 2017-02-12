@@ -21,7 +21,7 @@ app.post('/upload', function(req, res) {
     console.log(req.files);
     let file = req.files.file;
     let counter = 0;
-    let filePathToPic = "./uploaded_images/sample" + req.files.file.name.substr(-4);
+    let filePathToPic = "./sample" + req.files.file.name.substr(-4);
     file.mv(filePathToPic, function(err) {
         if (err) {
             res.status(500).send(err);
