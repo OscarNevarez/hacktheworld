@@ -1,5 +1,9 @@
 'use strict';
 
+module.exports = {
+    detectText: detectText
+}
+
 function detectText (fileName) {
   // [START vision_text_detection]
   // Imports the Google Cloud client library
@@ -33,3 +37,4 @@ function detectText (fileName) {
       });
       console.log(b);
     });
+}
