@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/OscarNevarez/hacktheworld#readme",
   "dependencies": {
-    "express": "^4.14.1"
+    "express": "^4.14.1",
+    "express-fileupload": "0.0.7"
   }
 }
