@@ -27,4 +27,8 @@
 </p>
 
 <!-- Change /upload-target to your upload address -->
-<form action="/upload-target" class="dropzone"></form>
+<form ref="uploadForm" id="uploadForm" action="/upload" class="dropzone" method="post" encType="multipart/form-data">
+    <div class="fallback">
+        <input name="sampleFile" type="file" multiple />
+    </div>
+</form>
