@@ -10,6 +10,7 @@ function detectText (fileName) {
   var array = [];
   var b = [];
   var r = /(^$)?[0-9]+(\.[0-9][0-9])$/;///(^$)?[0-9]+.?[0-9][0-9]$/;
+  var largest= 0;
   const Vision = require('@google-cloud/vision');
 
   // Instantiates a client
@@ -28,13 +29,19 @@ function detectText (fileName) {
       array.forEach( function(y){
         if(r.test(y)){
           if(y.charAt(0) == '$'){
-            b.push(y.substr(1));
+            b.push(Number(y.substr(1)));
           }
           else{
-            b.push(y);
+            b.push(Number(y));
           }
         }
       });
-      console.log(b);
+    console.log(b);
+  for (var i=0; i<=largest;i++){
+  if (b[i]>largest) {
+      largest=b[i];
+  }
+}
+console.log(largest);
     });
 }
